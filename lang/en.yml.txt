@@ -1,0 +1,230 @@
+# English language file for Telegram Auto-Posting Bot
+
+# General messages
+access_denied: "You don't have permission to use this bot. Visit https://t.me/poluchiprava228 for access."
+posting_locked: "⏳ A post will be published soon, your media has been added to the queue"
+
+# Start command
+start_title: "👋 <b>Auto-posting bot is running!</b>"
+start_channel: "📢 Channel: {channel_info}"
+start_enabled_default: "<b>🟢 Enabled by default:</b>"
+start_disabled_default: "<b>🔴 Disabled by default:</b>"
+start_not_assigned: "<b>❓ Not assigned (requires setup):</b>"
+start_recommendation: "⚠️ <b>Recommendation:</b> Be sure to configure posting interval, signature and time window for proper bot operation."
+start_help: "🛠 Use /help for setup assistance"
+
+# Help command
+help_title: "🤖 <b>Bot setup guide</b>"
+help_key_concepts: "<b>📚 Key concepts:</b>"
+help_interval_title: "<b>⏱ Posting interval</b> - time between post publications"
+help_interval_command: "• Command: /interval 2h30m"
+help_interval_format: "• Format: XdXhXm (days, hours, minutes)"
+help_interval_example: "• Example: /interval 3h (every 3 hours)"
+help_time_window_title: "<b>🕐 Time window</b> - period of day when publications are allowed"
+help_time_window_command: "• Command: /settime 06:00 20:00"
+help_time_window_desc: "• Posts will be published only during specified time"
+help_signature_title: "<b>📝 Signature (title)</b> - text added to each post"
+help_signature_command: "• Command: /title your_text"
+help_signature_link: "• Command: /title text # link (clickable link)"
+help_signature_menu: "• Detailed menu: /title"
+help_weekdays_title: "<b>📅 Weekdays</b> - which days publications are allowed"
+help_weekdays_command: "• Command: /days 1,2,3,4,5 (mon-fri)"
+help_weekdays_format: "1=monday, 7=sunday"
+help_planning_modes: "<b>🎯 Planning modes:</b>"
+help_exact_mode: "• <b>Exact</b> - posts are published at pre-calculated time moments"
+help_interval_mode: "• <b>Interval</b> - posts are published at equal time intervals"
+help_toggle_planning: "• Toggle: /toggleexact"
+help_add_media: "<b>📤 How to add media:</b>"
+help_single_media: "• Send one photo/video/document - will be added as separate post"
+help_media_group: "• Send several media together with any caption - will create media group"
+help_no_caption: "• Media without caption will be processed as separate posts"
+help_main_commands: "<b>🔧 Main commands:</b>"
+help_status_command: "/status - view current settings"
+help_commands_command: "/commands - full list of all commands"
+help_schedule_command: "/schedule - publication schedule"
+help_toggle_command: "/toggle - enable/disable auto-posting"
+
+# Commands list
+commands_title: "📋 <b>Complete command list</b>"
+commands_main_management: "<b>📤 Main management:</b>"
+commands_start: "/start - bot information and settings"
+commands_help: "/help - usage guide"
+commands_status: "/status - bot status and queue"
+commands_toggle: "/toggle - enable/disable auto-posting"
+commands_schedule_management: "<b>⏰ Schedule management:</b>"
+commands_schedule: "/schedule - show schedule"
+commands_interval: "/interval - set interval (e.g.: 2h30m)"
+commands_settime: "/settime - set time window (e.g.: 06:00 20:00)"
+commands_days: "/days - set weekdays (e.g.: 1,2,3,4,5)"
+commands_checktime: "/checktime - check current time and restrictions"
+commands_toggles: "<b>🎛 Toggles:</b>"
+commands_toggletime: "/toggletime - enable/disable time window"
+commands_toggledays: "/toggledays - enable/disable weekday restrictions"
+commands_toggleexact: "/toggleexact - exact/interval planning"
+commands_togglenotify: "/togglenotify - enable/disable notifications"
+commands_delayed_start: "<b>📅 Delayed start:</b>"
+commands_startdate: "/startdate - set time of first post"
+commands_clearstart: "/clearstart - disable delayed start"
+commands_channel_management: "<b>📢 Channel management:</b>"
+commands_channel: "/channel - show current channel"
+commands_setchannel: "/setchannel - set channel ID"
+commands_signature_management: "<b>📝 Signature management:</b>"
+commands_title_menu: "/title - signature management menu"
+commands_queue_management: "<b>📋 Queue management:</b>"
+commands_clear: "/clear - clear queue"
+commands_remove: "/remove - remove post by number"
+commands_random: "/random - shuffle queue"
+commands_instant_publication: "<b>⚡ Instant publication:</b>"
+commands_postfile: "/postfile - publish post by number"
+commands_postnow: "/postnow - publish next post"
+commands_postall: "/postall - publish all posts at once"
+
+# Status command
+status_title: "📊 <b>Bot Status</b>"
+status_posting: "🔄 Auto-posting: {status}"
+status_queue: "📋 Queue: {queue_info}"
+status_interval: "⏱ Interval: {interval}"
+status_signature: "🏷 Signature: {signature}"
+status_channel: "💬 Channel: {channel}"
+status_notifications: "{icon} Notifications: {status}"
+status_planning: "{icon} Planning: {status}"
+status_help: "💡 /help for commands | /schedule for schedule"
+
+# Interval command
+interval_current: "📊 Current interval: {interval}"
+interval_change: "To change: /interval 2h30m"
+interval_formats: "Formats: 1d (day), 2h (hours), 30m (minutes)"
+interval_set: "✅ Interval set: {interval}"
+interval_exact_times: "🎯 New posting times: {times}"
+interval_error: "❌ Invalid interval format. Example: 2h30m (2 hours 30 minutes)"
+interval_min_error: "❌ Minimum interval is 1 minute. You cannot set intervals less than 1 minute."
+
+# Toggle commands
+toggle_posting_enabled: "✅ Auto-posting enabled!"
+toggle_posting_disabled: "❌ Auto-posting disabled!"
+toggle_time_enabled: "✅ Time restriction enabled!"
+toggle_time_disabled: "❌ Time restriction disabled!"
+toggle_days_enabled: "✅ Weekday restriction enabled!"
+toggle_days_disabled: "❌ Weekday restriction disabled!"
+toggle_exact_enabled: "✅ Exact timing enabled!"
+toggle_exact_disabled: "❌ Exact timing disabled!"
+toggle_notify_enabled: "✅ Notifications enabled!"
+toggle_notify_disabled: "❌ Notifications disabled!"
+
+# Schedule command
+schedule_title: "📅 <b>Posting Schedule:</b>"
+schedule_status: "{icon} Status: {status}"
+schedule_timing: "{timing_info}"
+schedule_time_window: "{icon} Time window: {window}"
+schedule_weekdays: "{icon} Weekdays: {days}"
+schedule_exact_planning: "{icon} Exact planning: {status}"
+schedule_delayed_start: "{icon} Delayed start: {time}"
+schedule_help: "💡 /help for all commands"
+
+# Set time command
+settime_current: "🕐 Current time window: {window}"
+settime_change: "To change: /settime 06:00 20:00"
+settime_error_format: "❌ Specify start and end time. Example: /settime 06:00 20:00"
+settime_set: "✅ Time window set: {start} - {end}"
+settime_error_time: "❌ Invalid time format. Use HH:MM HH:MM, example: /settime 06:00 20:00"
+
+# Days command
+days_current: "📅 Current days: {days}"
+days_change: "To change: /days 1,2,3,4,5\n(1=mon, 2=tue, ..., 7=sun)"
+days_set: "✅ Weekdays set: {days}"
+days_error_range: "❌ Invalid days. Use numbers from 1 to 7"
+days_error_format: "❌ Invalid format. Example: /days 1,2,3,4,5"
+
+# Start date command
+startdate_current: "⏳ Delayed start: {time}\n\nTo change: /startdate 2024-01-25 17:00\nOr disable: /clearstart"
+startdate_not_set: "⏳ Delayed start not set\n\nTo set: /startdate 2024-01-25 17:00"
+startdate_set: "✅ Delayed start set for {time}"
+startdate_past: "❌ Specified time has already passed"
+startdate_error: "❌ Invalid format. Use: YYYY-MM-DD HH:MM or DD.MM.YYYY HH:MM"
+
+# Clear start command
+clearstart_disabled: "✅ Delayed start disabled"
+
+# Check time command
+checktime_title: "🕐 <b>Current Time Check</b>"
+checktime_current: "Current time: {time}"
+checktime_weekday: "Weekday: {weekday}"
+checktime_posting_allowed: "Posting allowed: {status}"
+checktime_reason: "Reason: {reason}"
+
+# Channel commands
+channel_current: "💬 Current channel: {channel}"
+channel_set: "✅ Channel set: {channel}"
+channel_error: "❌ Invalid channel ID"
+
+# Title/Signature commands
+title_current: "🏷 Current signature: {signature}"
+title_set: "✅ Signature set: {signature}"
+title_clear: "✅ Signature cleared"
+title_menu: """
+📝 <b>Signature Management</b>
+
+Current signature: {signature}
+
+Commands:
+/title your_text - set signature
+/title text # link - set signature with link
+/title clear - clear signature
+/title - show this menu
+"""
+
+# Queue management
+queue_clear: "✅ Queue cleared"
+queue_remove_error: "❌ Invalid post number"
+queue_remove_success: "✅ Post {number} removed from queue"
+queue_shuffle: "✅ Queue shuffled"
+queue_random_error: "❌ Queue has less than 2 posts"
+
+# Media handling
+media_added_single: "📸 {type} added to queue!"
+media_added_group: "📎 Media group of {count} elements ({types}) added to queue!"
+media_first_post_today: "🕐 First post: at {time}"
+media_first_post_other: "🕐 First post: {date} at {time}"
+media_first_post_schedule: "🕐 First post: by schedule"
+media_last_post_today: "\n📅 Last post: at {time}"
+media_last_post_other: "\n📅 Last post: {date} at {time}"
+media_queue_stats: "📊 In queue: {stats}"
+media_notification: "💡 You will receive notification after publication"
+media_help: "💡 /help | /status"
+
+# Publication notifications
+notify_success_single: "✅ Your {type} was successfully published in the channel!"
+notify_success_group: "✅ Your media group was successfully published in the channel!"
+notify_error: "❌ Error publishing your {type}: {error}"
+
+# Language commands
+language_current: "🌍 Current language: {language}"
+language_set: "✅ Language changed to: {language}"
+language_error: "❌ Invalid language. Available: en, ru, cs"
+
+# Timezone commands
+timezone_current: "🕐 Current timezone: {timezone}"
+timezone_set: "✅ Timezone set to: {timezone}"
+timezone_error: "❌ Invalid timezone. Example: Europe/Kyiv, UTC, Asia/Tokyo"
+
+# Weekday names
+weekdays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+weekdays_short: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+
+# Media type names
+media_types: 
+  photo: "photo"
+  video: "video"
+  gif: "GIF"
+  document: "document"
+  media_group: "media group"
+
+# Status indicators
+status_enabled: "enabled"
+status_disabled: "disabled"
+status_not_set: "not set"
+status_allowed: "allowed"
+status_not_allowed: "not allowed"
+status_inside_window: "inside time window"
+status_outside_window: "outside time window"
+status_waiting_start: "waiting for start"

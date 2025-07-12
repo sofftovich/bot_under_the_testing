@@ -1,0 +1,230 @@
+# Czech language file for Telegram Auto-Posting Bot
+
+# General messages
+access_denied: "Nemáte oprávnění k používání tohoto bota. Pro získání navštivte kanál https://t.me/poluchiprava228."
+posting_locked: "⏳ Brzy bude zveřejněn příspěvek, vaše média byla přidána do fronty"
+
+# Start command
+start_title: "👋 <b>Bot pro automatické zveřejňování je spuštěn!</b>"
+start_channel: "📢 Kanál: {channel_info}"
+start_enabled_default: "<b>🟢 Ve výchozím nastavení povoleno:</b>"
+start_disabled_default: "<b>🔴 Ve výchozím nastavení zakázáno:</b>"
+start_not_assigned: "<b>❓ Nepřiřazeno (vyžaduje nastavení):</b>"
+start_recommendation: "⚠️ <b>Doporučení:</b> Nezapomeňte nakonfigurovat interval zveřejňování, podpis a časové okno pro správnou funkci bota."
+start_help: "🛠 Použijte /help pro pomoc s nastavením"
+
+# Help command
+help_title: "🤖 <b>Průvodce nastavením bota</b>"
+help_key_concepts: "<b>📚 Klíčové pojmy:</b>"
+help_interval_title: "<b>⏱ Interval zveřejňování</b> - čas mezi zveřejněním příspěvků"
+help_interval_command: "• Příkaz: /interval 2h30m"
+help_interval_format: "• Formát: XdXhXm (dny, hodiny, minuty)"
+help_interval_example: "• Příklad: /interval 3h (každé 3 hodiny)"
+help_time_window_title: "<b>🕐 Časové okno</b> - období dne, kdy jsou povoleny publikace"
+help_time_window_command: "• Příkaz: /settime 06:00 20:00"
+help_time_window_desc: "• Příspěvky budou zveřejňovány pouze v určený čas"
+help_signature_title: "<b>📝 Podpis (title)</b> - text, který se přidá ke každému příspěvku"
+help_signature_command: "• Příkaz: /title váš_text"
+help_signature_link: "• Příkaz: /title text # odkaz (klikatelný odkaz)"
+help_signature_menu: "• Detailní menu: /title"
+help_weekdays_title: "<b>📅 Dny v týdnu</b> - které dny jsou povoleny publikace"
+help_weekdays_command: "• Příkaz: /days 1,2,3,4,5 (po-pá)"
+help_weekdays_format: "1=pondělí, 7=neděle"
+help_planning_modes: "<b>🎯 Režimy plánování:</b>"
+help_exact_mode: "• <b>Přesné</b> - příspěvky jsou zveřejňovány v předem vypočítané časové okamžiky"
+help_interval_mode: "• <b>Intervalové</b> - příspěvky jsou zveřejňovány v rovnoměrných časových intervalech"
+help_toggle_planning: "• Přepnutí: /toggleexact"
+help_add_media: "<b>📤 Jak přidat média:</b>"
+help_single_media: "• Pošlete jednu fotku/video/dokument - přidá se jako samostatný příspěvek"
+help_media_group: "• Pošlete několik médií společně s jakýmkoliv popiskem - vytvoří se mediální skupina"
+help_no_caption: "• Média bez popisku budou zpracována jako samostatné příspěvky"
+help_main_commands: "<b>🔧 Hlavní příkazy:</b>"
+help_status_command: "/status - zobrazit aktuální nastavení"
+help_commands_command: "/commands - úplný seznam všech příkazů"
+help_schedule_command: "/schedule - harmonogram publikací"
+help_toggle_command: "/toggle - povolit/zakázat automatické zveřejňování"
+
+# Commands list
+commands_title: "📋 <b>Úplný seznam příkazů</b>"
+commands_main_management: "<b>📤 Hlavní správa:</b>"
+commands_start: "/start - informace o botovi a nastavení"
+commands_help: "/help - průvodce používáním"
+commands_status: "/status - stav bota a fronta"
+commands_toggle: "/toggle - povolit/zakázat automatické zveřejňování"
+commands_schedule_management: "<b>⏰ Správa harmonogramu:</b>"
+commands_schedule: "/schedule - zobrazit harmonogram"
+commands_interval: "/interval - nastavit interval (např.: 2h30m)"
+commands_settime: "/settime - nastavit časové okno (např.: 06:00 20:00)"
+commands_days: "/days - nastavit dny v týdnu (např.: 1,2,3,4,5)"
+commands_checktime: "/checktime - zkontrolovat aktuální čas a omezení"
+commands_toggles: "<b>🎛 Přepínače:</b>"
+commands_toggletime: "/toggletime - povolit/zakázat časové okno"
+commands_toggledays: "/toggledays - povolit/zakázat omezení dnů v týdnu"
+commands_toggleexact: "/toggleexact - přesné/intervalové plánování"
+commands_togglenotify: "/togglenotify - povolit/zakázat oznámení"
+commands_delayed_start: "<b>📅 Odložený start:</b>"
+commands_startdate: "/startdate - nastavit čas prvního příspěvku"
+commands_clearstart: "/clearstart - zakázat odložený start"
+commands_channel_management: "<b>📢 Správa kanálu:</b>"
+commands_channel: "/channel - zobrazit aktuální kanál"
+commands_setchannel: "/setchannel - nastavit ID kanálu"
+commands_signature_management: "<b>📝 Správa podpisů:</b>"
+commands_title_menu: "/title - menu správy podpisů"
+commands_queue_management: "<b>📋 Správa fronty:</b>"
+commands_clear: "/clear - vyčistit frontu"
+commands_remove: "/remove - odstranit příspěvek podle čísla"
+commands_random: "/random - zamíchat frontu"
+commands_instant_publication: "<b>⚡ Okamžitá publikace:</b>"
+commands_postfile: "/postfile - zveřejnit příspěvek podle čísla"
+commands_postnow: "/postnow - zveřejnit další příspěvek"
+commands_postall: "/postall - zveřejnit všechny příspěvky najednou"
+
+# Status command
+status_title: "📊 <b>Stav bota</b>"
+status_posting: "🔄 Automatické zveřejňování: {status}"
+status_queue: "📋 Fronta: {queue_info}"
+status_interval: "⏱ Interval: {interval}"
+status_signature: "🏷 Podpis: {signature}"
+status_channel: "💬 Kanál: {channel}"
+status_notifications: "{icon} Oznámení: {status}"
+status_planning: "{icon} Plánování: {status}"
+status_help: "💡 /help pro příkazy | /schedule pro harmonogram"
+
+# Interval command
+interval_current: "📊 Aktuální interval: {interval}"
+interval_change: "Pro změnu: /interval 2h30m"
+interval_formats: "Formáty: 1d (den), 2h (hodiny), 30m (minuty)"
+interval_set: "✅ Interval nastaven: {interval}"
+interval_exact_times: "🎯 Nové časy zveřejňování: {times}"
+interval_error: "❌ Neplatný formát intervalu. Příklad: 2h30m (2 hodiny 30 minut)"
+interval_min_error: "❌ Minimální interval je 1 minuta. Nelze nastavit intervaly kratší než 1 minuta."
+
+# Toggle commands
+toggle_posting_enabled: "✅ Automatické zveřejňování povoleno!"
+toggle_posting_disabled: "❌ Automatické zveřejňování zakázáno!"
+toggle_time_enabled: "✅ Časové omezení povoleno!"
+toggle_time_disabled: "❌ Časové omezení zakázáno!"
+toggle_days_enabled: "✅ Omezení dnů v týdnu povoleno!"
+toggle_days_disabled: "❌ Omezení dnů v týdnu zakázáno!"
+toggle_exact_enabled: "✅ Přesné načasování povoleno!"
+toggle_exact_disabled: "❌ Přesné načasování zakázáno!"
+toggle_notify_enabled: "✅ Oznámení povolena!"
+toggle_notify_disabled: "❌ Oznámení zakázána!"
+
+# Schedule command
+schedule_title: "📅 <b>Harmonogram zveřejňování:</b>"
+schedule_status: "{icon} Stav: {status}"
+schedule_timing: "{timing_info}"
+schedule_time_window: "{icon} Časové okno: {window}"
+schedule_weekdays: "{icon} Dny v týdnu: {days}"
+schedule_exact_planning: "{icon} Přesné plánování: {status}"
+schedule_delayed_start: "{icon} Odložený start: {time}"
+schedule_help: "💡 /help pro všechny příkazy"
+
+# Set time command
+settime_current: "🕐 Aktuální časové okno: {window}"
+settime_change: "Pro změnu: /settime 06:00 20:00"
+settime_error_format: "❌ Zadejte čas začátku a konce. Příklad: /settime 06:00 20:00"
+settime_set: "✅ Časové okno nastaveno: {start} - {end}"
+settime_error_time: "❌ Neplatný formát času. Použijte HH:MM HH:MM, příklad: /settime 06:00 20:00"
+
+# Days command
+days_current: "📅 Aktuální dny: {days}"
+days_change: "Pro změnu: /days 1,2,3,4,5\n(1=po, 2=út, ..., 7=ne)"
+days_set: "✅ Dny v týdnu nastaveny: {days}"
+days_error_range: "❌ Neplatné dny. Použijte čísla od 1 do 7"
+days_error_format: "❌ Neplatný formát. Příklad: /days 1,2,3,4,5"
+
+# Start date command
+startdate_current: "⏳ Odložený start: {time}\n\nPro změnu: /startdate 2024-01-25 17:00\nNebo zakázat: /clearstart"
+startdate_not_set: "⏳ Odložený start není nastaven\n\nPro nastavení: /startdate 2024-01-25 17:00"
+startdate_set: "✅ Odložený start nastaven na {time}"
+startdate_past: "❌ Zadaný čas už uplynul"
+startdate_error: "❌ Neplatný formát. Použijte: YYYY-MM-DD HH:MM nebo DD.MM.YYYY HH:MM"
+
+# Clear start command
+clearstart_disabled: "✅ Odložený start zakázán"
+
+# Check time command
+checktime_title: "🕐 <b>Kontrola aktuálního času</b>"
+checktime_current: "Aktuální čas: {time}"
+checktime_weekday: "Den v týdnu: {weekday}"
+checktime_posting_allowed: "Zveřejňování povoleno: {status}"
+checktime_reason: "Důvod: {reason}"
+
+# Channel commands
+channel_current: "💬 Aktuální kanál: {channel}"
+channel_set: "✅ Kanál nastaven: {channel}"
+channel_error: "❌ Neplatné ID kanálu"
+
+# Title/Signature commands
+title_current: "🏷 Aktuální podpis: {signature}"
+title_set: "✅ Podpis nastaven: {signature}"
+title_clear: "✅ Podpis vymazán"
+title_menu: """
+📝 <b>Správa podpisů</b>
+
+Aktuální podpis: {signature}
+
+Příkazy:
+/title váš_text - nastavit podpis
+/title text # odkaz - nastavit podpis s odkazem
+/title clear - vymazat podpis
+/title - zobrazit toto menu
+"""
+
+# Queue management
+queue_clear: "✅ Fronta vyčištěna"
+queue_remove_error: "❌ Neplatné číslo příspěvku"
+queue_remove_success: "✅ Příspěvek {number} odstraněn z fronty"
+queue_shuffle: "✅ Fronta zamíchána"
+queue_random_error: "❌ Fronta má méně než 2 příspěvky"
+
+# Media handling
+media_added_single: "📸 {type} přidáno do fronty!"
+media_added_group: "📎 Mediální skupina z {count} prvků ({types}) přidána do fronty!"
+media_first_post_today: "🕐 První příspěvek: v {time}"
+media_first_post_other: "🕐 První příspěvek: {date} v {time}"
+media_first_post_schedule: "🕐 První příspěvek: podle harmonogramu"
+media_last_post_today: "\n📅 Poslední příspěvek: v {time}"
+media_last_post_other: "\n📅 Poslední příspěvek: {date} v {time}"
+media_queue_stats: "📊 Ve frontě: {stats}"
+media_notification: "💡 Po zveřejnění obdržíte oznámení"
+media_help: "💡 /help | /status"
+
+# Publication notifications
+notify_success_single: "✅ Vaše {type} bylo úspěšně zveřejněno v kanálu!"
+notify_success_group: "✅ Vaše mediální skupina byla úspěšně zveřejněna v kanálu!"
+notify_error: "❌ Chyba při zveřejňování vašeho {type}: {error}"
+
+# Language commands
+language_current: "🌍 Aktuální jazyk: {language}"
+language_set: "✅ Jazyk změněn na: {language}"
+language_error: "❌ Neplatný jazyk. Dostupné: en, ru, cs"
+
+# Timezone commands
+timezone_current: "🕐 Aktuální časové pásmo: {timezone}"
+timezone_set: "✅ Časové pásmo nastaveno: {timezone}"
+timezone_error: "❌ Neplatné časové pásmo. Příklad: Europe/Kyiv, UTC, Asia/Tokyo"
+
+# Weekday names
+weekdays: ["Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota", "Neděle"]
+weekdays_short: ["Po", "Út", "St", "Čt", "Pá", "So", "Ne"]
+
+# Media type names
+media_types: 
+  photo: "fotka"
+  video: "video"
+  gif: "GIF"
+  document: "dokument"
+  media_group: "mediální skupina"
+
+# Status indicators
+status_enabled: "povoleno"
+status_disabled: "zakázáno"
+status_not_set: "není nastaveno"
+status_allowed: "povoleno"
+status_not_allowed: "nepovoleno"
+status_inside_window: "uvnitř časového okna"
+status_outside_window: "mimo časové okno"
+status_waiting_start: "čekání na start"
